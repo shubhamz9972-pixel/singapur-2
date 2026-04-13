@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Singapur Restobar — Where Singapore meets your senses. Premium Pan-Asian dining, craft cocktails, live music and nightlife in Ludhiana.">
+  <title>Singapur Restobar — Where Singapore Meets Your Senses</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="nav-bar" id="main-nav" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="nav__logo" aria-label="Singapur Restobar Home">
+    <div class="nav__logo-crest" aria-hidden="true">S</div>
+    <div>
+      <span class="nav__logo-text">Singapur</span>
+      <span class="nav__logo-sub">Restobar</span>
+    </div>
+  </a>
+  <ul class="nav__links" role="list">
+    <li><a href="index.html"    class="nav__link nav__link--active">Home</a></li>
+    <li><a href="menu.html"     class="nav__link">Menu</a></li>
+    <li><a href="services.html" class="nav__link">Experiences</a></li>
+    <li><a href="about.html"    class="nav__link">Our Story</a></li>
+    <li><a href="faqs.html"     class="nav__link">FAQs</a></li>
+  </ul>
+  <a href="reserve.html" class="nav__cta">Reserve a Table</a>
+  <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE OVERLAY -->
+<div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+<!-- MOBILE MENU -->
+<nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+  <a href="index.html"    class="mobile-nav__link mobile-nav__link--active">Home</a>
+  <a href="menu.html"     class="mobile-nav__link">Menu</a>
+  <a href="services.html" class="mobile-nav__link">Experiences</a>
+  <a href="about.html"    class="mobile-nav__link">Our Story</a>
+  <a href="faqs.html"     class="mobile-nav__link">FAQs</a>
+  <a href="contact.html"  class="mobile-nav__link">Contact</a>
+  <a href="reserve.html"  class="btn btn--primary mobile-menu__cta">Reserve a Table</a>
+</nav>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- HERO SECTION -->
+<!-- ═══════════════════════════════════════════════ -->
+<section class="home-hero" aria-label="Hero">
+  <img src="images/hero_bg.png" alt="Singapur Restobar ambiance — premium Singapore-inspired restobar" class="home-hero__bg" fetchpriority="high">
+  <div class="home-hero__overlay" aria-hidden="true"></div>
+  <div class="home-hero__vignette" aria-hidden="true"></div>
+
+  <div class="home-hero__content">
+    <p class="hero__label">
+      <span class="hero__label-line" aria-hidden="true"></span>
+      Est. 2024 · Ludhiana, Punjab
+    </p>
+    <h1 class="hero__heading">
+      Where <span>Singapore</span><br>Meets Your Senses
+    </h1>
+    <p class="hero__sub">Pan-Asian cuisine, handcrafted cocktails, live music & nightlife — all under one roof.</p>
+    <div class="hero__ctas">
+      <a href="menu.html"    class="btn btn--primary">Explore Our Menu</a>
+      <a href="reserve.html" class="btn btn--ghost">Reserve a Table</a>
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <span class="hero__scroll-label">Scroll</span>
+    <div class="hero__scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- BRAND STRIP -->
+<!-- ═══════════════════════════════════════════════ -->
+<section class="section section--dark" aria-labelledby="brand-heading">
+  <div class="brand-strip reveal">
+    <div class="brand-strip__quote reveal--left" id="brand-heading">
+      "A culinary journey across Asian shores, reimagined in the heart of Punjab."
+    </div>
+    <div class="brand-strip__text reveal--right">
+      <p style="font-size: var(--text-base); font-weight: 300; color: var(--text-muted); line-height: var(--lh-relaxed); margin-bottom: var(--sp-8);">
+        Singapur Restobar is Ludhiana's premier Pan-Asian dining and nightlife destination. Inspired by the vibrant hawker culture and premium bar scene of Singapore, we bring together bold flavours, expertly crafted cocktails, and unforgettable evenings in an atmosphere that feels worlds apart.
+      </p>
+      <div class="brand-strip__stat">
+        <span class="brand-strip__stat-num">50+</span>
+        <span class="brand-strip__stat-label">Signature Dishes</span>
+      </div>
+      <div class="brand-strip__stat">
+        <span class="brand-strip__stat-num">40+</span>
+        <span class="brand-strip__stat-label">Craft Cocktails</span>
+      </div>
+      <div class="brand-strip__stat">
+        <span class="brand-strip__stat-num">7</span>
+        <span class="brand-strip__stat-label">Nights a Week</span>
+      </div>
+      <a href="about.html" class="btn btn--ghost" style="margin-top: var(--sp-4); width: fit-content;">Our Story</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- EXPERIENCE CARDS -->
+<!-- ═══════════════════════════════════════════════ -->
+<section class="section section--warm" aria-labelledby="exp-heading">
+  <div class="container">
+    <div class="section-header section-header--center reveal">
+      <p class="section-label">What We Offer</p>
+      <h2 class="section-title" id="exp-heading">Crafted <em>Experiences</em></h2>
+      <p class="section-subtitle">Every visit is a different chapter — from lazy afternoon lounging to electrifying nightlife.</p>
+    </div>
+    <div class="exp-grid reveal-stagger">
+      <!-- Card 1 -->
+      <div class="exp-card stagger-child">
+        <div class="exp-card__icon" aria-hidden="true">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9.348 14.651a3.75 3.75 0 010-5.303m5.304-.001a3.75 3.75 0 010 5.303m-7.425 2.122a6.75 6.75 0 010-9.546m9.546 0a6.75 6.75 0 010 9.546M5.106 18.894c-3.808-3.808-3.808-9.98 0-13.789m13.788 0c3.808 3.808 3.808 9.981 0 13.79M12 12h.008v.007H12V12z"/></svg>
+        </div>
+        <h3 class="exp-card__title">Night Bar &amp; DJ</h3>
+        <p class="exp-card__desc">Weekly DJ nights, themed events, and a pulsing bar atmosphere that keeps you dancing till dawn.</p>
+      </div>
+      <!-- Card 2 -->
+      <div class="exp-card stagger-child">
+        <div class="exp-card__icon" aria-hidden="true">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>
+        </div>
+        <h3 class="exp-card__title">Live Music</h3>
+        <p class="exp-card__desc">Acoustic sets, jazz evenings, and live band performances curated to elevate your dining experience.</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="exp-card stagger-child">
+        <div class="exp-card__icon" aria-hidden="true">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.871c1.355 0 2.697.056 4.024.166C17.155 8.51 18 9.473 18 10.608v2.513m-3-4.87v-1.5m-6 1.5v-1.5m12 9.75l-1.5.75a3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0 3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0L3 16.5m15-3.38a48.474 48.474 0 00-6-.37c-2.032 0-4.034.125-6 .37m12 0c.39 4.054.39 8.125 0 12.18m-12 0c-.39-4.054-.39-8.125 0-12.18"/></svg>
+        </div>
+        <h3 class="exp-card__title">Pan-Asian Dining</h3>
+        <p class="exp-card__desc">From Singapore chilli crab to Japanese-inspired small plates — a global journey on every dish.</p>
+      </div>
+      <!-- Card 4 -->
+      <div class="exp-card stagger-child">
+        <div class="exp-card__icon" aria-hidden="true">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 010 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a3 3 0 010-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375z"/></svg>
+        </div>
+        <h3 class="exp-card__title">Private Events</h3>
+        <p class="exp-card__desc">Exclusive venue hire for birthdays, corporate evenings, and intimate celebrations with a bespoke menu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- FEATURED DISH SPOTLIGHT -->
+<!-- ═══════════════════════════════════════════════ -->
+<section class="section section--dark" aria-labelledby="spotlight-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-label">Chef's Pick</p>
+      <h2 class="section-title" id="spotlight-heading">Tonight's <em>Spotlight</em></h2>
+    </div>
+    <div class="spotlight reveal">
+      <div class="spotlight__img-wrap">
+        <img src="images/featured_dish.png" alt="Pan-Asian fusion signature dish — gold leaf garnish on dark slate" class="spotlight__img" loading="lazy">
+      </div>
+      <div class="spotlight__content">
+        <span class="spotlight__tag">Signature · Chef's Special</span>
+        <h3 class="spotlight__title">Laksa Crab<br>Bisque Ravioli</h3>
+        <p class="spotlight__desc">Silky handmade pasta pockets filled with Singapore-style blue crab, bathed in a rich laksa coconut bisque. Finished with crispy shallots and fresh kaffir lime foam.</p>
+        <div class="spotlight__price">
+          <span class="spotlight__price-label">Starting</span>
+          <span class="spotlight__price-num">₹1,450</span>
+        </div>
+        <a href="menu.html" class="btn btn--primary" style="width: fit-content;">View Full Menu</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- GALLERY -->
+<!-- ═══════════════════════════════════════════════ -->
+<section class="section section--warm" aria-labelledby="gallery-heading">
+  <div class="container">
+    <div class="section-header section-header--center reveal">
+      <p class="section-label">Our Vibe</p>
+      <h2 class="section-title" id="gallery-heading"><em>Moments</em> at Singapur</h2>
+    </div>
+    <div class="gallery-grid reveal">
+      <div class="gallery-item">
+        <img src="images/interior_bg.png" alt="Singapur Restobar interior — warm golden lights, dark wood" loading="lazy">
+        <div class="gallery-item__overlay" aria-hidden="true">
+          <div class="gallery-item__icon"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/cocktail_hero.png" alt="Premium Singapore-inspired cocktails" loading="lazy">
+        <div class="gallery-item__overlay" aria-hidden="true">
+          <div class="gallery-item__icon"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/menu_starters.png" alt="Starters platter" loading="lazy">
+        <div class="gallery-item__overlay" aria-hidden="true">
+          <div class="gallery-item__icon"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/featured_dish.png" alt="Signature dish" loading="lazy">
+        <div class="gallery-item__overlay" aria-hidden="true">
+          <div class="gallery-item__icon"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/menu_cocktails.png" alt="Cocktail bar" loading="lazy">
+        <div class="gallery-item__overlay" aria-hidden="true">
+          <div class="gallery-item__icon"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- TESTIMONIALS -->
+<!-- ═══════════════════════════════════════════════ -->
+<section class="testimonial-section" aria-labelledby="reviews-heading">
+  <div class="testimonial-wrapper">
+    <div class="section-header section-header--center reveal">
+      <p class="section-label">Guest Reviews</p>
+      <h2 class="section-title" id="reviews-heading">What Our <em>Guests</em> Say</h2>
+    </div>
+    <div class="testimonial-track-wrap reveal">
+      <div class="testimonial-track">
+        <div class="testimonial-card" role="group" aria-label="Review 1">
+          <div class="testimonial-stars" aria-label="5 stars">
+            ★★★★★
+          </div>
+          <blockquote class="testimonial-card__quote">"The atmosphere alone is worth the visit. But the Laksa Bisque Ravioli? Absolutely extraordinary. I've never tasted anything like it in Ludhiana."</blockquote>
+          <p class="testimonial-card__author">Priya Sharma</p>
+          <p class="testimonial-card__role">Food Blogger · Google Review</p>
+        </div>
+        <div class="testimonial-card" role="group" aria-label="Review 2">
+          <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+          <blockquote class="testimonial-card__quote">"Celebrated our anniversary here and it was perfect. The private corner tables, the cocktails, the live music — a truly Singapore-level experience."</blockquote>
+          <p class="testimonial-card__author">Rohan &amp; Meera Kapoor</p>
+          <p class="testimonial-card__role">Anniversary Dinner · Google Review</p>
+        </div>
+        <div class="testimonial-card" role="group" aria-label="Review 3">
+          <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+          <blockquote class="testimonial-card__quote">"Best cocktail menu in the city, hands down. The Singapore Sling Signature is liquid gold. The bar team clearly knows their craft."</blockquote>
+          <p class="testimonial-card__author">Arjun Malhotra</p>
+          <p class="testimonial-card__role">Cocktail Enthusiast · Google Review</p>
+        </div>
+        <div class="testimonial-card" role="group" aria-label="Review 4">
+          <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+          <blockquote class="testimonial-card__quote">"Hosted my company's team dinner here. Impeccable service, stunning décor, and a menu that catered to everyone. Will be our go-to corporate venue."</blockquote>
+          <p class="testimonial-card__author">Simran Dhaliwal</p>
+          <p class="testimonial-card__role">Corporate Event · Google Review</p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-controls reveal">
+      <button class="carousel-btn" id="carousel-prev" aria-label="Previous review">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+      </button>
+      <div class="carousel-dots" role="list" aria-label="Review navigation">
+        <button class="carousel-dot" aria-label="Review 1" role="listitem"></button>
+        <button class="carousel-dot" aria-label="Review 2" role="listitem"></button>
+        <button class="carousel-dot" aria-label="Review 3" role="listitem"></button>
+        <button class="carousel-dot" aria-label="Review 4" role="listitem"></button>
+      </div>
+      <button class="carousel-btn" id="carousel-next" aria-label="Next review">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- FAQ PREVIEW -->
+<!-- ═══════════════════════════════════════════════ -->
+<section class="section section--warm" aria-labelledby="faq-home-heading">
+  <div class="container" style="max-width: 760px;">
+    <div class="section-header section-header--center reveal">
+      <p class="section-label">Questions</p>
+      <h2 class="section-title" id="faq-home-heading">Quick <em>Answers</em></h2>
+    </div>
+    <div class="reveal">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" id="faq-h1" aria-controls="faq-a1">
+          What are Singapur Restobar's operating hours?
+          <span class="faq-icon" aria-hidden="true"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
+        </button>
+        <div class="faq-answer" id="faq-a1" role="region" aria-labelledby="faq-h1"><div class="faq-answer-inner">We are open every day from 12:00 PM to 2:00 AM — serving food, cocktails, and entertainment all day long.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" id="faq-h2" aria-controls="faq-a2">
+          Do I need a reservation?
+          <span class="faq-icon" aria-hidden="true"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
+        </button>
+        <div class="faq-answer" id="faq-a2" role="region" aria-labelledby="faq-h2"><div class="faq-answer-inner">Walk-ins are always welcome, but we highly recommend reserving a table for weekends, private sections, or special occasions to ensure availability.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" id="faq-h3" aria-controls="faq-a3">
+          Is there a dress code?
+          <span class="faq-icon" aria-hidden="true"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
+        </button>
+        <div class="faq-answer" id="faq-a3" role="region" aria-labelledby="faq-h3"><div class="faq-answer-inner">Smart casual is our vibe. We love it when guests dress to impress for the evening atmosphere — but come as you are for lunch.</div></div>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top: var(--sp-8);">
+      <a href="faqs.html" class="btn btn--ghost">View All FAQs</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- RESERVE CTA STRIP -->
+<!-- ═══════════════════════════════════════════════ -->
+<section class="reserve-strip" aria-labelledby="reserve-strip-heading">
+  <div class="reserve-strip__bg-text" aria-hidden="true">Reserve</div>
+  <div class="reserve-strip__content reveal">
+    <div class="divider-ornament"><span>✦</span></div>
+    <h2 class="reserve-strip__title" id="reserve-strip-heading">Your Table <em>Awaits</em></h2>
+    <p class="reserve-strip__sub">Join us for an evening that feeds every sense. Book your spot at Singapur Restobar today.</p>
+    <a href="reserve.html" class="btn btn--primary" style="margin: 0 auto;">Reserve Now</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-brand__logo">Singapur</div>
+      <div class="footer-brand__sub">Restobar</div>
+      <p class="footer-brand__desc">Ludhiana's premier Pan-Asian dining and nightlife destination. Where every evening feels like a journey across Singapore's iconic culinary landscape.</p>
+      <div class="footer-social" aria-label="Social media">
+        <a href="#" class="footer-social__link" aria-label="Follow us on Instagram">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="#" class="footer-social__link" aria-label="Follow us on Facebook">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a href="#" class="footer-social__link" aria-label="Message us on WhatsApp">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12c0 1.76.454 3.414 1.254 4.853L2 22l5.254-1.254A9.959 9.959 0 0012 22z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <h3 class="footer-col__heading">Quick Links</h3>
+      <ul class="footer-col__list" role="list">
+        <li><a href="index.html"    class="footer-col__link">Home</a></li>
+        <li><a href="menu.html"     class="footer-col__link">Menu</a></li>
+        <li><a href="services.html" class="footer-col__link">Experiences</a></li>
+        <li><a href="about.html"    class="footer-col__link">Our Story</a></li>
+        <li><a href="faqs.html"     class="footer-col__link">FAQs</a></li>
+        <li><a href="contact.html"  class="footer-col__link">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer-col__heading">Experiences</h3>
+      <ul class="footer-col__list" role="list">
+        <li><a href="services.html" class="footer-col__link">Night Bar &amp; DJ</a></li>
+        <li><a href="services.html" class="footer-col__link">Live Music</a></li>
+        <li><a href="services.html" class="footer-col__link">Pan-Asian Dining</a></li>
+        <li><a href="services.html" class="footer-col__link">Private Events</a></li>
+        <li><a href="reserve.html"  class="footer-col__link">Reserve a Table</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer-col__heading">Visit Us</h3>
+      <div style="display:flex;flex-direction:column;gap:var(--sp-4);">
+        <div class="footer-col__info">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+          <span>Model Town, Ludhiana,<br>Punjab 141002</span>
+        </div>
+        <div class="footer-col__info">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+          <a href="tel:+917083000000" class="footer-col__link">+91 70830 00000</a>
+        </div>
+        <div class="footer-col__info">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+          <a href="mailto:hello@singapurrestobar.com" class="footer-col__link">hello@singapurrestobar.com</a>
+        </div>
+        <div class="footer-col__info">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <span>Mon–Sun: 12 PM – 2 AM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-bottom__copy">© 2024 Singapur Restobar. All Rights Reserved.</p>
+    <div class="footer-bottom__links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">
+  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

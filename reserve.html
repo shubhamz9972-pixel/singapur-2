@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reserve your table at Singapur Restobar, Ludhiana. Book online for dinner, DJ nights, live music evenings, or private events.">
+  <title>Reserve a Table — Singapur Restobar</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .reservation-form { display: flex; flex-direction: column; gap: var(--sp-5); }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-5); }
+    @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
+    .success-msg { display: none; background: rgba(34,197,94,0.1); border: 1px solid rgba(34,197,94,0.3); border-radius: var(--radius-lg); padding: var(--sp-6) var(--sp-8); text-align: center; }
+    .success-msg.visible { display: block; }
+    .success-msg h3 { font-family: var(--font-heading); font-size: var(--text-2xl); color: #4ade80; margin-bottom: var(--sp-3); }
+    .success-msg p { font-size: var(--text-base); font-weight: 300; color: var(--text-muted); }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav-bar" id="main-nav" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="nav__logo" aria-label="Singapur Restobar Home"><div class="nav__logo-crest" aria-hidden="true">S</div><div><span class="nav__logo-text">Singapur</span><span class="nav__logo-sub">Restobar</span></div></a>
+  <ul class="nav__links" role="list">
+    <li><a href="index.html" class="nav__link">Home</a></li>
+    <li><a href="menu.html" class="nav__link">Menu</a></li>
+    <li><a href="services.html" class="nav__link">Experiences</a></li>
+    <li><a href="about.html" class="nav__link">Our Story</a></li>
+    <li><a href="faqs.html" class="nav__link">FAQs</a></li>
+  </ul>
+  <a href="reserve.html" class="nav__cta" aria-current="page">Reserve a Table</a>
+  <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+<nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+  <a href="index.html" class="mobile-nav__link">Home</a><a href="menu.html" class="mobile-nav__link">Menu</a><a href="services.html" class="mobile-nav__link">Experiences</a><a href="about.html" class="mobile-nav__link">Our Story</a><a href="faqs.html" class="mobile-nav__link">FAQs</a><a href="contact.html" class="mobile-nav__link">Contact</a>
+  <a href="reserve.html" class="btn btn--primary mobile-menu__cta" aria-current="page">Reserve a Table</a>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <img src="images/interior_bg.png" alt="Singapur Restobar elegant interior ready for guests" class="page-hero__bg" fetchpriority="high">
+  <div class="page-hero__overlay" aria-hidden="true"></div>
+  <div class="page-hero__content">
+    <p class="page-hero__breadcrumb">Home &bull; Reserve</p>
+    <h1 class="page-hero__title">Reserve Your <em>Table</em></h1>
+  </div>
+</section>
+
+<!-- RESERVATION SECTION -->
+<section class="section section--dark" aria-labelledby="reserve-heading">
+  <div class="container">
+    <div class="reservation-grid">
+
+      <!-- INFO COLUMN -->
+      <div class="reservation-info reveal--left">
+        <div class="section-header">
+          <p class="section-label">Book With Us</p>
+          <h2 class="section-title" id="reserve-heading">Your Evening <em>Starts Here</em></h2>
+          <p class="section-subtitle">Fill in the form and our team will confirm your booking within 2 hours.</p>
+        </div>
+
+        <div class="divider-ornament" style="margin:var(--sp-8) 0;max-width:100%;justify-content:flex-start;"><span>Opening Hours</span></div>
+
+        <div class="hours-list" role="list">
+          <div class="hours-item hours-item--today" role="listitem">
+            <span class="hours-item__day">Monday – Thursday</span>
+            <span class="hours-item__time">12:00 PM – 12:00 AM</span>
+          </div>
+          <div class="hours-item" role="listitem">
+            <span class="hours-item__day">Friday</span>
+            <span class="hours-item__time">12:00 PM – 2:00 AM</span>
+          </div>
+          <div class="hours-item" role="listitem">
+            <span class="hours-item__day">Saturday</span>
+            <span class="hours-item__time">12:00 PM – 2:00 AM</span>
+          </div>
+          <div class="hours-item" role="listitem">
+            <span class="hours-item__day">Sunday</span>
+            <span class="hours-item__time">12:00 PM – 11:00 PM</span>
+          </div>
+        </div>
+
+        <div style="margin-top:var(--sp-8);padding:var(--sp-6);background:var(--surface);border:1px solid var(--border-gold);border-radius:var(--radius-lg);">
+          <p style="font-size:var(--text-sm);font-weight:500;color:var(--primary-light);margin-bottom:var(--sp-3);">📞 Prefer to call?</p>
+          <a href="tel:+917083000000" style="font-family:var(--font-heading);font-size:var(--text-2xl);font-weight:600;color:var(--text-primary);">+91 70830 00000</a>
+          <p style="font-size:var(--text-xs);font-weight:300;color:var(--text-muted);margin-top:var(--sp-2);">Lines open 12 PM – 10 PM daily</p>
+        </div>
+
+        <div style="margin-top:var(--sp-5);padding:var(--sp-6);background:var(--surface);border:1px solid var(--border-gold);border-radius:var(--radius-lg);">
+          <p style="font-size:var(--text-sm);font-weight:500;color:var(--primary-light);margin-bottom:var(--sp-3);">🎉 Planning a private event?</p>
+          <p style="font-size:var(--text-sm);font-weight:300;color:var(--text-muted);margin-bottom:var(--sp-4);">For groups of 20+ or full venue hire, our events team would love to hear from you.</p>
+          <a href="contact.html" class="btn btn--ghost btn--sm">Enquire About Events</a>
+        </div>
+      </div>
+
+      <!-- FORM COLUMN -->
+      <div class="glass-panel reveal--right" style="padding:var(--sp-8);">
+        <form class="reservation-form" id="reservation-form" novalidate aria-label="Table reservation form">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="res-name">Full Name <span class="required">*</span></label>
+              <input class="form-input" type="text" id="res-name" name="name" placeholder="e.g. Priya Sharma" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="res-phone">Phone Number <span class="required">*</span></label>
+              <input class="form-input" type="tel" id="res-phone" name="phone" placeholder="+91 98765 43210" required autocomplete="tel">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="res-email">Email Address <span class="required">*</span></label>
+            <input class="form-input" type="email" id="res-email" name="email" placeholder="you@email.com" required autocomplete="email">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="res-date">Date <span class="required">*</span></label>
+              <input class="form-input" type="date" id="res-date" name="date" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="res-time">Time <span class="required">*</span></label>
+              <select class="form-select" id="res-time" name="time" required>
+                <option value="" disabled selected>Select time</option>
+                <option value="12:00">12:00 PM</option>
+                <option value="13:00">1:00 PM</option>
+                <option value="14:00">2:00 PM</option>
+                <option value="15:00">3:00 PM</option>
+                <option value="16:00">4:00 PM</option>
+                <option value="17:00">5:00 PM</option>
+                <option value="18:00">6:00 PM</option>
+                <option value="19:00">7:00 PM</option>
+                <option value="20:00">8:00 PM</option>
+                <option value="21:00">9:00 PM</option>
+                <option value="22:00">10:00 PM</option>
+                <option value="23:00">11:00 PM</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="res-guests">Number of Guests <span class="required">*</span></label>
+              <select class="form-select" id="res-guests" name="guests" required>
+                <option value="" disabled selected>Select guests</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6 Guests</option>
+                <option value="7-10">7–10 Guests</option>
+                <option value="11-20">11–20 Guests</option>
+                <option value="20+">20+ Guests (Private Event)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="res-occasion">Occasion</label>
+              <select class="form-select" id="res-occasion" name="occasion">
+                <option value="" selected>Select occasion</option>
+                <option value="birthday">Birthday</option>
+                <option value="anniversary">Anniversary</option>
+                <option value="business">Business Dinner</option>
+                <option value="date">Date Night</option>
+                <option value="celebration">Celebration</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="res-section">Preferred Section</label>
+            <select class="form-select" id="res-section" name="section">
+              <option value="" selected>No preference</option>
+              <option value="main-dining">Main Dining Area</option>
+              <option value="bar-area">Bar Area</option>
+              <option value="private-corner">Private Corner</option>
+              <option value="outdoor">Outdoor Terrace</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="res-requests">Special Requests or Dietary Requirements</label>
+            <textarea class="form-textarea" id="res-requests" name="requests" placeholder="Allergies, dietary needs, celebration décor, or any other special requests…" rows="4"></textarea>
+          </div>
+
+          <p style="font-size:var(--text-xs);font-weight:300;color:var(--text-disabled);line-height:var(--lh-relaxed);">By submitting this form you agree to our <a href="#" style="color:var(--primary);text-decoration:underline;">privacy policy</a>. We'll confirm your booking within 2 hours.</p>
+
+          <button type="submit" class="btn btn--primary" id="reserve-btn" style="width:100%;min-height:56px;font-size:var(--text-base);">
+            Confirm Reservation
+          </button>
+        </form>
+
+        <!-- Success Message -->
+        <div class="success-msg" id="success-msg" role="alert" aria-live="polite">
+          <h3>🎉 Booking Confirmed!</h3>
+          <p>Thank you for choosing Singapur Restobar. We've received your reservation and will send a confirmation to your email shortly. We look forward to welcoming you!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-grid">
+    <div class="footer-brand"><div class="footer-brand__logo">Singapur</div><div class="footer-brand__sub">Restobar</div><p class="footer-brand__desc">Ludhiana's premier Pan-Asian dining and nightlife destination.</p></div>
+    <div><h3 class="footer-col__heading">Quick Links</h3><ul class="footer-col__list" role="list"><li><a href="index.html" class="footer-col__link">Home</a></li><li><a href="menu.html" class="footer-col__link">Menu</a></li><li><a href="about.html" class="footer-col__link">Our Story</a></li><li><a href="contact.html" class="footer-col__link">Contact</a></li></ul></div>
+    <div><h3 class="footer-col__heading">Experiences</h3><ul class="footer-col__list" role="list"><li><a href="services.html" class="footer-col__link">Night Bar &amp; DJ</a></li><li><a href="services.html" class="footer-col__link">Live Music</a></li><li><a href="services.html" class="footer-col__link">Pan-Asian Dining</a></li></ul></div>
+    <div><h3 class="footer-col__heading">Visit Us</h3><div style="display:flex;flex-direction:column;gap:var(--sp-4);"><div class="footer-col__info"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg><span>Model Town, Ludhiana</span></div><div class="footer-col__info"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span>Mon–Sun: 12 PM – 2 AM</span></div></div></div>
+  </div>
+  <div class="footer-bottom"><p class="footer-bottom__copy">© 2024 Singapur Restobar. All Rights Reserved.</p><div class="footer-bottom__links"><a href="#">Privacy</a><a href="#">Terms</a></div></div>
+</footer>
+<button class="back-to-top" id="back-to-top" aria-label="Back to top"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"/></svg></button>
+<script src="js/main.js"></script>
+<script>
+  // Set minimum date to today
+  const dateInput = document.getElementById('res-date');
+  if (dateInput) {
+    const today = new Date().toISOString().split('T')[0];
+    dateInput.setAttribute('min', today);
+  }
+  // Form submit
+  document.getElementById('reservation-form')?.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const btn = document.getElementById('reserve-btn');
+    btn.textContent = 'Confirming…';
+    btn.disabled = true;
+    setTimeout(() => {
+      this.style.display = 'none';
+      document.getElementById('success-msg').classList.add('visible');
+    }, 1200);
+  });
+</script>
+</body>
+</html>

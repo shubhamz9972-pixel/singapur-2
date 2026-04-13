@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The story behind Singapur Restobar — Ludhiana's premium Pan-Asian dining and nightlife destination.">
+  <title>Our Story — Singapur Restobar</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav-bar" id="main-nav" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="nav__logo" aria-label="Singapur Restobar Home"><div class="nav__logo-crest" aria-hidden="true">S</div><div><span class="nav__logo-text">Singapur</span><span class="nav__logo-sub">Restobar</span></div></a>
+  <ul class="nav__links" role="list">
+    <li><a href="index.html" class="nav__link">Home</a></li>
+    <li><a href="menu.html" class="nav__link">Menu</a></li>
+    <li><a href="services.html" class="nav__link">Experiences</a></li>
+    <li><a href="about.html" class="nav__link nav__link--active">Our Story</a></li>
+    <li><a href="faqs.html" class="nav__link">FAQs</a></li>
+  </ul>
+  <a href="reserve.html" class="nav__cta">Reserve a Table</a>
+  <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+<nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+  <a href="index.html" class="mobile-nav__link">Home</a><a href="menu.html" class="mobile-nav__link">Menu</a><a href="services.html" class="mobile-nav__link">Experiences</a><a href="about.html" class="mobile-nav__link mobile-nav__link--active">Our Story</a><a href="faqs.html" class="mobile-nav__link">FAQs</a><a href="contact.html" class="mobile-nav__link">Contact</a>
+  <a href="reserve.html" class="btn btn--primary mobile-menu__cta">Reserve a Table</a>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <img src="images/interior_bg.png" alt="Singapur Restobar elegant interior" class="page-hero__bg" fetchpriority="high">
+  <div class="page-hero__overlay" aria-hidden="true"></div>
+  <div class="page-hero__content">
+    <p class="page-hero__breadcrumb">Home &bull; Our Story</p>
+    <h1 class="page-hero__title">Our <em>Story</em></h1>
+  </div>
+</section>
+
+<!-- MANIFESTO -->
+<section class="section section--dark" aria-labelledby="manifesto-heading">
+  <div class="container">
+    <div class="about-manifesto reveal">
+      <blockquote class="about-quote reveal--left">
+        "We didn't just open a restaurant — we built a gateway to Singapore's soul, right here in Punjab."
+      </blockquote>
+      <div class="reveal--right">
+        <div class="section-header">
+          <p class="section-label">Who We Are</p>
+          <h2 class="section-title" id="manifesto-heading">Born of <em>Passion</em></h2>
+        </div>
+        <p style="font-size:var(--text-base);font-weight:300;color:var(--text-muted);line-height:var(--lh-relaxed);margin-bottom:var(--sp-5);">
+          Singapur Restobar was born from a single trip to Singapore's hawker centres and hidden speakeasies. Our founders fell in love with the way Singapore blends Chinese, Malay, Indian, and Western flavours into something entirely its own — bold, refined, and unapologetically vibrant.
+        </p>
+        <p style="font-size:var(--text-base);font-weight:300;color:var(--text-muted);line-height:var(--lh-relaxed);margin-bottom:var(--sp-5);">
+          In 2024, they brought that magic to Ludhiana. Not as a replica, but as a reinterpretation — a place where the finest Pan-Asian cuisine meets Punjab's legendary hospitality, where craft cocktails flow under golden lights, and where every evening unfolds like a journey across Asian shores.
+        </p>
+        <p style="font-size:var(--text-base);font-weight:300;color:var(--text-muted);line-height:var(--lh-relaxed);">
+          Today, Singapur Restobar is more than a dining destination. It's where Ludhiana comes to celebrate, connect, and indulge — seven nights a week.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section section--warm" aria-labelledby="values-heading">
+  <div class="container">
+    <div class="section-header section-header--center reveal">
+      <p class="section-label">What Drives Us</p>
+      <h2 class="section-title" id="values-heading">Our <em>Pillars</em></h2>
+    </div>
+    <div class="about-values reveal-stagger">
+      <div class="exp-card stagger-child">
+        <div class="exp-card__icon" aria-hidden="true">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"/></svg>
+        </div>
+        <h3 class="exp-card__title">Craft</h3>
+        <p class="exp-card__desc">Every dish is handcrafted by our chefs with precision and passion — from sourcing the finest ingredients to the final garnish.</p>
+      </div>
+      <div class="exp-card stagger-child">
+        <div class="exp-card__icon" aria-hidden="true">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/></svg>
+        </div>
+        <h3 class="exp-card__title">Culture</h3>
+        <p class="exp-card__desc">We celebrate Singapore's multicultural spirit — Chinese, Malay, Indian, and Western flavours united on one table.</p>
+      </div>
+      <div class="exp-card stagger-child">
+        <div class="exp-card__icon" aria-hidden="true">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/></svg>
+        </div>
+        <h3 class="exp-card__title">Community</h3>
+        <p class="exp-card__desc">We're Ludhiana's living room — the place where friends, families, and colleagues come together to celebrate life's big and small moments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="section section--dark" aria-labelledby="timeline-heading">
+  <div class="container" style="max-width:760px;">
+    <div class="section-header reveal">
+      <p class="section-label">Our Journey</p>
+      <h2 class="section-title" id="timeline-heading">Milestones</h2>
+    </div>
+    <div class="about-timeline reveal">
+      <div class="timeline-item">
+        <span class="timeline-year">Early 2024</span>
+        <h3 class="timeline-title">The Singapore Trip</h3>
+        <p class="timeline-desc">Our founders visit Singapore and fall in love with its vibrant food culture — hawker centres by day, speakeasies by night. The dream of Singapur is born.</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">Mid 2024</span>
+        <h3 class="timeline-title">Building the Vision</h3>
+        <p class="timeline-desc">A heritage property in Model Town is transformed into an immersive dining experience — from dark-wood interiors to the custom-designed gold-lit bar.</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">Late 2024</span>
+        <h3 class="timeline-title">Grand Opening</h3>
+        <p class="timeline-desc">Singapur Restobar opens its doors. Within weeks, it becomes Ludhiana's most talked-about nightlife and dining destination.</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">2025</span>
+        <h3 class="timeline-title">Expansion &amp; Recognition</h3>
+        <p class="timeline-desc">New seasonal menus, weekly live music, DJ residencies, and private event hosting make Singapur the city's go-to venue for every occasion.</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">Today</span>
+        <h3 class="timeline-title">Your Next Visit</h3>
+        <p class="timeline-desc">50+ dishes, 40+ cocktails, and a team that treats every guest like family. Welcome to Singapur.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVE CTA -->
+<section class="reserve-strip" aria-labelledby="about-cta">
+  <div class="reserve-strip__bg-text" aria-hidden="true">Story</div>
+  <div class="reserve-strip__content reveal">
+    <div class="divider-ornament"><span>✦</span></div>
+    <h2 class="reserve-strip__title" id="about-cta">Come Write the <em>Next Chapter</em></h2>
+    <p class="reserve-strip__sub">Your table is waiting. Your story starts here.</p>
+    <a href="reserve.html" class="btn btn--primary" style="margin:0 auto;">Reserve Now</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-grid">
+    <div class="footer-brand"><div class="footer-brand__logo">Singapur</div><div class="footer-brand__sub">Restobar</div><p class="footer-brand__desc">Ludhiana's premier Pan-Asian dining and nightlife destination.</p></div>
+    <div><h3 class="footer-col__heading">Quick Links</h3><ul class="footer-col__list" role="list"><li><a href="index.html" class="footer-col__link">Home</a></li><li><a href="menu.html" class="footer-col__link">Menu</a></li><li><a href="about.html" class="footer-col__link">Our Story</a></li><li><a href="contact.html" class="footer-col__link">Contact</a></li></ul></div>
+    <div><h3 class="footer-col__heading">Experiences</h3><ul class="footer-col__list" role="list"><li><a href="services.html" class="footer-col__link">Night Bar &amp; DJ</a></li><li><a href="services.html" class="footer-col__link">Live Music</a></li><li><a href="services.html" class="footer-col__link">Pan-Asian Dining</a></li><li><a href="services.html" class="footer-col__link">Private Events</a></li></ul></div>
+    <div><h3 class="footer-col__heading">Visit Us</h3><div style="display:flex;flex-direction:column;gap:var(--sp-4);"><div class="footer-col__info"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg><span>Model Town, Ludhiana</span></div><div class="footer-col__info"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span>Mon–Sun: 12 PM – 2 AM</span></div></div></div>
+  </div>
+  <div class="footer-bottom"><p class="footer-bottom__copy">© 2024 Singapur Restobar. All Rights Reserved.</p><div class="footer-bottom__links"><a href="#">Privacy</a><a href="#">Terms</a></div></div>
+</footer>
+<button class="back-to-top" id="back-to-top" aria-label="Back to top"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"/></svg></button>
+<script src="js/main.js"></script>
+</body>
+</html>
